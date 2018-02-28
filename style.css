@@ -18,3 +18,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 The main stylesheet. This must be included with the Theme, 
 and it must contain the information header for your Theme.
 */
+
+body {
+  padding-top: 4.5rem;
+}
+
+.navbar-brand {
+  letter-spacing: 2px;
+  font-size: 14px;
+}
