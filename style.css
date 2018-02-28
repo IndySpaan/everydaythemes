@@ -27,3 +27,8 @@ body {
   letter-spacing: 2px;
   font-size: 14px;
 }
+
+.navbar-toggler,
+.navbar-toggler:focus {
+  border: none;
+}
