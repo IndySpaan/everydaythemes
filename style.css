@@ -21,6 +21,7 @@ and it must contain the information header for your Theme.
 
 body {
   padding-top: 4.5rem;
+  background-color: #e7e7e7;
 }
 
 .navbar-brand {
@@ -31,4 +32,76 @@ body {
 .navbar-toggler,
 .navbar-toggler:focus {
   border: none;
+}
+
+.navbar-pineapple {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.navbar-pineapple .navbar-nav .menu-item a {
+  color: #afafaf;
+  font-weight: 500;
+  transition: 0.2s;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.navbar-pineapple .navbar-nav > .active > a,
+.navbar-pineapple .navbar-nav > .active > a:hover,
+.navbar-pineapple .navbar-nav > .active > a:focus {
+  color: #475263;
+  transition: 0.2s;
+}
+
+.navbar-pineapple .navbar-nav .menu-item a:hover,
+.navbar-pineapple .navbar-nav .menu-item a:focus {
+  color: #475263;
+  transition: 0.2s;
+}
+@media (min-width: 768px) {
+  .dropdown .dropdown-menu {
+    display: block;
+    opacity: 0;
+    -webkit-transition: all 120ms ease-in-out;
+    -moz-transition: all 120ms ease-in-out;
+    -ms-transition: all 120ms ease-in-out;
+    -o-transition: all 120ms ease-in-out;
+    transition: all 120ms ease-in-out;
+    border-radius: 0px;
+    border: none;
+    margin-top: -10px;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    -webkit-box-shadow: 0px 2px 24px -9px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 24px -9px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 24px -9px rgba(0, 0, 0, 0.3);
+    margin-top: 0px;
+  }
+
+  .dropdown-menu .menu-item a:hover {
+    border: none;
+    border-radius: 0px;
+    background-color: transparent;
+  }
+
+  .navbar-pineapple .navbar-nav .dropdown-menu .menu-item a {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .navbar-pineapple .navbar-nav .dropdown-menu .menu-item a:hover {
+    padding-left: 30px;
+    margin-right: 0px;
+  }
+
+  .dropdown-menu .menu-item .dropdown-item {
+    font-size: 14px;
+  }
+}
+
+.navbar-toggler-icon {
+  stroke: #f44242;
 }

@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<nav class="navbar navbar-expand-md navbar-pineapple navbar-default fixed-top">
+    <div class="container">
     <a class="navbar-brand" href="<?php bloginfo('url')?>"><?php bloginfo('name')?></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -9,10 +10,11 @@
                'menu'              => 'primary',
                'depth'             => 2,
                'container'         => 'div',
-               'container_class'   => 'navbar-collapse collapse',
+               'container_class'   => 'navbar-collapse collapse justify-content-end',
                'menu_class'        => 'nav navbar-nav',
                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                'walker'            => new wp_bootstrap_navwalker())
            );
        ?>
+       </div>
 </nav>
