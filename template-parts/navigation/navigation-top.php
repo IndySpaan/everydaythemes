@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-pineapple navbar-default fixed-top">
+<nav class="navbar navbar-expand-md navbar-pineapple transparent navbar-default fixed-top">
     <div class="container">
     <a class="navbar-brand" href="<?php bloginfo('url')?>"><?php bloginfo('name')?></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">

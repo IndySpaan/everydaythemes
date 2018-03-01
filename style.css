@@ -20,8 +20,8 @@ and it must contain the information header for your Theme.
 */
 
 body {
-  padding-top: 4.5rem;
-  background-color: #e7e7e7;
+  background-color: #f7f7f7;
+  margin-top: -32px;
 }
 
 .navbar-brand {
@@ -58,6 +58,38 @@ body {
   color: #475263;
   transition: 0.2s;
 }
+
+.navbar-pineapple.transparent {
+  padding: 10px;
+  background-color: transparent;
+}
+
+.navbar-pineapple.transparent .navbar-brand {
+  letter-spacing: 2px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.navbar-pineapple.transparent .navbar-nav .menu-item a {
+  color: #afafaf;
+  font-weight: 500;
+  transition: 0.2s;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.navbar-pineapple.transparent .navbar-nav > .active > a,
+.navbar-pineapple.transparent .navbar-nav > .active > a:hover,
+.navbar-pineapple.transparent .navbar-nav > .active > a:focus {
+  color: #fff;
+  transition: 0.2s;
+}
+
+.navbar-pineapple.transparent .navbar-nav .menu-item a:hover,
+.navbar-pineapple.transparent .navbar-nav .menu-item a:focus {
+  color: #fff;
+  transition: 0.2s;
+}
+
 @media (min-width: 768px) {
   .dropdown .dropdown-menu {
     display: block;
@@ -85,6 +117,7 @@ body {
     border: none;
     border-radius: 0px;
     background-color: transparent;
+    color: #475263;
   }
 
   .navbar-pineapple .navbar-nav .dropdown-menu .menu-item a {
@@ -95,11 +128,18 @@ body {
   .navbar-pineapple .navbar-nav .dropdown-menu .menu-item a:hover {
     padding-left: 30px;
     margin-right: 0px;
+    color: #475263;
   }
 
   .dropdown-menu .menu-item .dropdown-item {
     font-size: 14px;
   }
+}
+
+.fw-fh-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #475263;
 }
 
 .navbar-toggler-icon {

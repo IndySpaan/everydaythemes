@@ -4,6 +4,8 @@ get_header(); ?>
 <body>
 
 <?php get_template_part( '/template-parts/navigation/navigation', 'top' ); ?>
+<div class="fw-fh-container">
+</div>
 <div class="container">
   <div class="jumbotron">
     <h1>Navbar example</h1>
